@@ -1,0 +1,906 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* CSS reset ending  */
+
+/* Fonts  */
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Bold.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Regular.ttf");
+  font-weight: normal;
+}
+
+/* Main css  */
+
+html {
+  font-family: "Open Sans", sans-serif;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+/*  DESKTOP  */
+
+.welcome {
+  width: 100%;
+  background-image: url(../images/football_1920.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  background-color: #000000;
+  position: relative;
+  padding: 3% 0 4%;
+}
+
+.welcome::after {
+  content: "";
+  background-color: #0a0e34;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.9;
+}
+
+.logo {
+  fill: #ffffff;
+  width: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 3;
+  position: relative;
+}
+
+.container {
+  position: relative;
+  z-index: 2;
+  width: 80%;
+  margin: 15% auto 0;
+}
+
+.welcome-title,
+.welcome-title-secondrow {
+  color: #ffffff;
+  font-size: 5.5rem;
+  text-transform: uppercase;
+  font-family: "Open Sans" , sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.welcome-title-secondrow {
+  text-align: right;
+  display: block;
+}
+
+.container-buttons {
+  margin: 10% auto 0;
+  display: flex;
+  width: 40%;
+  min-width: 200px;
+  z-index: 3;
+  justify-content: space-between;
+  flex-shrink: 1;
+}
+
+.logo-button {
+  box-sizing: border-box;
+  background-color: #5e42b0;
+  border-radius: 50px;
+  z-index: 3;
+  width: 45%;
+  display: flex;
+  align-items: center;
+  padding: 2% 5%;
+  text-decoration: none;
+  color: #fff;
+  flex-shrink: 1;
+}
+
+.icon-button {
+  fill: #ffffff;
+  width: 20%;
+  margin-right: 10%;
+}
+
+.description-button {
+  text-transform: uppercase;
+  font-family: inherit;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.store-description-button {
+  text-transform: uppercase;
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1.5;
+  display: block;
+}
+
+.container-content {
+  width: 100%;
+}
+
+.container-content-h3-1 {
+  width: 50%;
+  margin-left: auto;
+  padding: 6% 0 4%;
+}
+
+.h3-tittle {
+  text-transform: uppercase;
+  color: #e7e7e7;
+  font-size: 80px;
+  letter-spacing: 2px;
+}
+
+.tittle-content {
+  text-transform: uppercase;
+  color: #c1c1c1;
+  font-size: 2.25rem;
+  margin: 0 0 2%;
+  letter-spacing: 2px;
+}
+
+.tittle-content:before {
+  content: "01";
+  color: black;
+  font-size: 18px;
+  line-height: 1.8;
+  border-bottom: 5px solid #5e42b0;
+  vertical-align: top;
+  font-weight: 700;
+  font-family: "Open Sans";
+  margin-right: 2%;
+}
+
+.second:before {
+  content: "02";
+  color: black;
+  font-size: 18px;
+  line-height: 1.8;
+  border-bottom: 5px solid #5e42b0;
+  vertical-align: top;
+  font-weight: 700;
+  font-family: "Open Sans";
+  margin-right: 2%;
+}
+
+.third:before {
+  content: "03";
+  color: black;
+  font-size: 18px;
+  line-height: 1.8;
+  border-bottom: 5px solid #fff;
+  vertical-align: top;
+  font-weight: 700;
+  font-family: "Open Sans";
+  margin-right: 2%;
+}
+
+.description-content-1 {
+  width: 50%;
+  margin-left: auto;
+  padding: 2% 0;
+}
+
+.text-description {
+  line-height: 28px;
+  max-width: 65%;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.grey {
+  background-color: #f6f4fa;
+}
+
+.purple {
+  background-color: #5e42b0;
+  color: #fff;
+}
+
+.blue {
+  background-color: #0a0e34;
+  color: #fff;
+}
+
+.blue .third:before {
+  color: #9173e6;
+}
+
+.football-player {
+  position: absolute;
+  max-width: 50%;
+  margin: 2% 5% 0 10%;
+}
+
+.box-three-lines {
+  position: relative;
+}
+
+.description-content-2 {
+  width: 50%;
+  margin-right: auto;
+  padding: 2% 0 2% 10%;
+}
+
+.container-content-h3-2 {
+  width: 50%;
+  margin-right: auto;
+  padding: 6% 0 4% 10%;
+}
+
+.basketball-player {
+  position: absolute;
+  margin: 1% 0 0 40%;
+  max-width: 49%;
+}
+
+.flex-container {
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.flex-image-first {
+  background-image: url(../images/be-active_1024.jpg);
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-color: #000;
+  width: 50%;
+  background-size: cover;
+  padding: 20% 0;
+}
+
+.flex-image-second {
+  background-image: url(../images/find-contact.jpg);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-color: #000;
+  width: 50%;
+  padding: 20% 0;
+  background-size: cover;
+}
+
+.flex-image-third {
+  background-image: url(../images/work-it_1024.jpg);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-color: #000;
+  width: 50%;
+  padding: 20% 0;
+  background-size: cover;
+}
+
+.flex-principles {
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding-left: 10%;
+  box-sizing: border-box;
+}
+
+.flex-principle-tittle {
+  padding: 14% 0;
+  box-sizing: border-box;
+}
+
+.flex-principle-text {
+  box-sizing: border-box;
+  max-width: 70%;
+  padding: 0 0 14%;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.square-number-one,
+.square-number-two,
+.square-number-three {
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  background-color: #5e42b0;
+  left: calc(50% - 120px / 2);
+  top: calc(50% - 120px / 2);
+}
+
+.square-number-one:before {
+  content: "01";
+  color: white;
+  font-size: 24px;
+  line-height: 1.2;
+  border-bottom: 5px solid #8f7bc8;
+  font-weight: 700;
+  font-family: "Open Sans";
+  position: absolute;
+  left: calc(50% - 24px / 2);
+  top: calc(50% - 40px / 2);
+  box-sizing: border-box;
+}
+
+.square-number-two:before {
+  content: "02";
+  color: white;
+  font-size: 24px;
+  line-height: 1.2;
+  border-bottom: 5px solid #8f7bc8;
+  font-weight: 700;
+  font-family: "Open Sans";
+  position: absolute;
+  left: calc(50% - 24px / 2);
+  top: calc(50% - 40px / 2);
+  box-sizing: border-box;
+}
+
+.square-number-three:before {
+  content: "03";
+  color: white;
+  font-size: 24px;
+  line-height: 1.2;
+  border-bottom: 5px solid #8f7bc8;
+  font-weight: 700;
+  font-family: "Open Sans" ;
+  position: absolute;
+  left: calc(50% - 24px / 2);
+  top: calc(50% - 40px / 2);
+  box-sizing: border-box;
+}
+
+.logo-footer {
+  fill: #ffffff;
+  width: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 3%;
+  z-index: 3;
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 10% / 2);
+}
+
+.background-footer {
+  width: 100%;
+  background-image: url(../images/game_1920.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  background-color: #000000;
+  position: relative;
+  padding: 10% 0 20%;
+}
+
+.background-footer::after {
+  content: "";
+  background-color: #0a0e34;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.9;
+}
+
+.container-footer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  width: 70%;
+  margin: 0 auto 12%;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.tittle-footer {
+  color: white;
+  text-transform: uppercase;
+  font-size: 80px;
+  letter-spacing: 1.5px;
+  margin-bottom: 2%;
+}
+
+.text-footer {
+  color: #a496ca;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.icon-logo {
+  border-radius: 30px;
+  width: 13%;
+  margin-right: 3%;
+  background-color: #6c4dc6;
+  background-position: center center;
+  fill: white;
+  box-sizing: border-box;
+  padding: 25px 25px;
+}
+
+@media (min-width: 960px) {
+  .white:hover {
+    background-color: #5e42b0;
+  }
+
+  .grey:hover {
+    background-color: #5e42b0;
+  }
+
+  .purple:hover {
+    background-color: #0a0e34;
+  }
+
+  .blue:hover {
+    background-color: #5e42b0;
+  }
+}
+
+/*  TABLET  */
+
+@media (max-width: 960px) {
+  .welcome {
+    padding: 5% 0 10%;
+    background-image: url(../images/football_1280.jpg);
+  }
+
+  .logo {
+    width: 25%;
+  }
+
+  .container {
+    margin: 15% auto 40%;
+  }
+
+  .welcome-title,
+  .welcome-title-secondrow {
+    font-size: 4rem;
+  }
+
+  .welcome-title-secondrow {
+    margin-left: 16.5%;
+    text-align: left;
+  }
+
+  .container-buttons {
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  .container-content-h3-1 {
+    width: 60%;
+  }
+
+  .tittle-content {
+    font-size: 2rem;
+  }
+
+  .description-content-1 {
+    width: 60%;
+    padding: 4% 0;
+  }
+
+  .text-description {
+    max-width: 85%;
+    font-size: 1rem;
+  }
+
+  .football-player {
+    top: calc(40% - 50% / 2);
+    right: 55%;
+    width: 50%;
+  }
+
+  .description-content-2 {
+    padding: 4% 0 2% 4%;
+  }
+
+  .container-content-h3-2 {
+    padding: 6% 0 4% 5%;
+  }
+
+  .block {
+    position: relative;
+    width: 100%;
+  }
+
+  .basketball-player {
+    top: 10%;
+    left: 10%;
+    max-width: 50%;
+    width: 50%;
+  }
+
+  .flex-container {
+    flex-wrap: wrap;
+  }
+
+  .flex-image-first {
+    background-image: url(../images/be-active_960.jpg);
+    width: 100%;
+    padding: 40% 0;
+  }
+
+  .flex-image-second {
+    background-image: url(../images/find-contact_960.jpg);
+    padding: 40% 0;
+    width: 100%;
+  }
+
+  .flex-image-third {
+    background-image: url(../images/work-it_960.jpg);
+    padding: 40% 0;
+    width: 100%;
+  }
+
+  .flex-principles {
+    width: 100%;
+    padding-left: 4%;
+    order: 2;
+  }
+
+  .flex-principle-tittle {
+    padding: 10% 0 5%;
+  }
+
+  .flex-principle-text {
+    padding: 0 0 10%;
+  }
+
+  .square-number-one,
+  .square-number-two,
+  .square-number-three {
+    width: 100px;
+    height: 100px;
+    left: 4%;
+    top: 55%;
+  }
+
+  .background-footer {
+    background-image: url(../images/game_767.jpg);
+  }
+  .logo-footer {
+    width: 20%;
+    bottom: 5%;
+    left: calc(50% - 20% / 2);
+  }
+
+  .container-footer {
+    width: 100%;
+    margin: 5% auto 40%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .tittle-footer {
+    margin: 0 auto 2%;
+    text-align: center;
+  }
+
+  .text-footer {
+    text-align: center;
+  }
+
+  .icon-logo {
+    width: 18%;
+  }
+}
+
+/*  MOBILE  */
+
+@media (max-width: 640px) {
+  .welcome {
+    padding-top: 8%;
+    background-image: url(../images/football_767.jpg);
+  }
+
+  .logo {
+    width: 30%;
+  }
+
+  .container {
+    margin: 30% auto 30%;
+  }
+
+  .welcome-title,
+  .welcome-title-secondrow {
+    font-size: 1.75rem;
+  }
+
+  .welcome-title-secondrow {
+    margin-left: 13%;
+    margin-top: 7%;
+  }
+
+  .container-buttons {
+    margin-bottom: 15%;
+    flex-direction: column;
+  }
+
+  .logo-button {
+    width: 100%;
+    margin: 5% auto;
+    justify-content: center;
+  }
+
+  .icon-button {
+    width: 10%;
+    margin-right: 2%;
+  }
+
+  .description-button {
+  font-size: 0.75rem;
+  
+}
+
+  .store-description-button {
+  font-size: 0.75rem;
+  
+}
+
+  .container-content-h3-1 {
+    margin-left: 10%;
+  }
+
+  .tittle-content {
+    font-size: 1.4375rem;
+  }
+
+  .h3-tittle {
+    font-size: 1.75rem;
+  }
+  .description-content-1 {
+    padding: 15% 0;
+  }
+
+  .football-player {
+    position: relative;
+    display: block;
+    top: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+
+  .order-player {
+    order: 1;
+  }
+  .order-paragraph {
+    order: 3;
+  }
+
+  .description-content-1 {
+    width: 100%;
+    padding-left: 10%;
+    box-sizing: border-box;
+  }
+
+  .description-content-2 {
+    padding: 15% 0;
+    padding-left: 10%;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .container-content-h3-2 {
+    margin-left: 10%;
+    padding-left: 0;
+  }
+
+  .block {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .basketball-player {
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+  }
+
+  .flex-image-first {
+    background-image: url(../images/be-active_640.jpg);
+    padding: 55% 0;
+  }
+
+  .flex-image-second {
+    background-image: url(../images/find-contact_640.jpg);
+    padding: 55% 0;
+  }
+
+  .flex-image-third {
+    background-image: url(../images/work-it_640.jpg);
+    padding: 55% 0;
+  }
+
+.square-number-one, .square-number-two, .square-number-three {
+  width: 80px;
+  height: 80px;
+  top: calc(110vw - 80px / 2);
+
+}
+.square-number-one:before, .square-number-two:before, .square-number-three:before  {
+
+  font-size: 0.875rem;
+  height: 20px;
+  border-bottom: 4px solid #8f7bc8;
+  left: calc(50% - 0.875rem / 2);
+    top: calc(50% - 20px / 2);
+
+}
+  .flex-principle-text {
+    font-size: 1rem;
+  }
+
+  .logo-footer {
+    width: 30%;
+    left: calc(50% - 30% / 2);
+  }
+
+  .background-footer {
+    background-image: url(../images/game_767.jpg);
+  }
+  .container-footer {
+    margin-bottom: 20%;
+    display: block;
+  }
+
+  .tittle-footer {
+    font-size: 2rem;
+  }
+
+  .text-footer {
+    font-size: 0.875rem;
+  }
+
+  .icon-logo {
+    width: 25%;
+    padding: 20px 20px;
+    margin: 0 auto 10%;
+  }
+}
